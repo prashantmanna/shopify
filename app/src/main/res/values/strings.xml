@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Shopify</string>
+    <string name="shopify">Shopify</string>
+    <string name="welcome_to">Welcome To</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="prashant_manna_all_rights_reserved">© Prashant Manna. All rights reserved</string>
+    <string name="enter_email_id">Enter Email ID</string>
+    <string name="enter_password">Enter Password</string>
+</resources>

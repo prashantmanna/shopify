@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcomeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/welcome_to"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <TextView
+        android:id="@+id/shopifyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_semibold_italic"
+        android:text="@string/shopify"
+        app:layout_constraintEnd_toEndOf="@+id/welcomeName"
+        app:layout_constraintStart_toStartOf="@+id/welcomeName"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeName" />
+
+    <ImageView
+        android:id="@+id/welcomeImg"
+        android:layout_width="250sp"
+        android:layout_height="380sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/signIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopifyName"
+        app:srcCompat="@drawable/welcome" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/sign_in"
+        android:onClick="gotoSignIn"
+        app:layout_constraintEnd_toEndOf="@+id/welcomeImg"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeImg"
+        app:layout_constraintStart_toStartOf="@+id/welcomeImg"
+        tools:layout_editor_absoluteY="597dp" />
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/sign_up"
+        android:onClick="gotoSignUp"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/signIn"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="@+id/signIn"
+        app:layout_constraintTop_toBottomOf="@+id/signIn" />
+
+
+    <TextView
+        android:id="@+id/prashant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_medium_italic"
+        android:text="@string/prashant_manna_all_rights_reserved"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/signUp"
+        app:layout_constraintTop_toBottomOf="@+id/signUp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

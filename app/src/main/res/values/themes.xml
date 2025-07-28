@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Shopify" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.Shopify" parent="Base.Theme.Shopify" />
+
+
+    <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/navy_blue</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/kaam</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.Shopify</item>
+    </style>
+</resources>
